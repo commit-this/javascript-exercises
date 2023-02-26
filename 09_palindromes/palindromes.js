@@ -2,9 +2,7 @@ const palindromes = function (string) {
     string = string.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()" "]/g,"")
     .toLowerCase();
 
-    if (string === string.split("").reverse().join("")) return true;
-    return false;
-    
+    return (string === string.split("").reverse().join(""));
 };
 
 // Do not edit below this line
